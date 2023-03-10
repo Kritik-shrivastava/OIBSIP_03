@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIBSIP_03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <form>
+            <div>
+                <label for="degree-type"><h3>Temperature Type:</h3></label>
+                <select id="degree-type" name="degree-type">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+            <div class="ans">
+                <h3>Temperature:</h3>
+                <input type="number" id="temperature" placeholder="Enter temperature">
+            </div>
+            <button type="button" onclick="convert()">Convert</button>
+        </form>
+        <div class="temp" id="one">
+            <h3>Celsius:</h3>
+            <input type="text" id="result-celsius" disabled>
+        </div>
+        <div class="temp" id="two">
+            <h3>Fahrenheit:</h3>
+            <input type="text" id="result-fahrenheit" disabled>
+        </div>
+        <div class="temp" id="three">
+            <h3>Kelvin:</h3>
+            <input type="text" id="result-kelvin" disabled>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
